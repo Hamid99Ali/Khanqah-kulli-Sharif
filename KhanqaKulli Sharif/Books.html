@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Books</title>
+    <link rel="stylesheet" href="khanqah_style.css">
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    .ursmubarak {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+
+    }
+
+    .urs-text {
+        border: 1px solid rgba(60, 64, 67, 0.15);
+        padding: 12px;
+        border-radius: 6px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+
+    .urs_vedio {
+        height: 350px;
+        width: 250px;
+        border-radius: 6px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        border: 1px solid rgba(60, 64, 67, 0.30);
+    }
+
+    .col-vedios {
+        margin-top: 25px;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- class="position-absolute top-0 start-50 translate-middle-x" -->
+        <div id="logo" class="position-fixed top-0 text-center position-relative">
+            <a href="index.html"><img src="images/logos/khanqah Logo 1.png" alt="Khanqah Logo"></a>
+            <nav class="navbar navbar-collapse navbar-collapse-sm navbar-expand-md navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button id="line-button" class="navbar-toggler position-relative start-50 translate-middle-x"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fas fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-start" id="navbarTogglerDemo02">
+                        <ul
+                            class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center flex-md-wrap flex-lg-wrap w-100">
+                            <li class="nav-item"> <a class="nav-link to_upper active" id="lies"
+                                    href="index.html">HOME</a> </li>
+                            <li class="nav-item"> <a class="nav-link to_upper" id="lies"
+                                    href="intro.html">INTRODUCTION</a> </li>
+                            <li class="nav-item"> <a class="nav-link to_upper" id="lies" href="message.html">MESSAGE</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link to_upper dropdown-toggle" id="lies" href="#"
+                                    id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    PROJECTS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown" id="drop-down">
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="educational_project.html">Educational
+                                            Projects</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies" href="idara_project.html">Idara
+                                            Projects</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies" href="welfare_project.html">Welfare
+                                            Projects</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies" href="youth-wing.html">Youth wing
+                                            Projects</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link to_upper dropdown-toggle" id="lies" href="#"
+                                    id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    EVENTS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown" id="drop-down">
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="ruhaniijtima_events.html">ruhaniijtima</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="Salana_Majlas-e-Isal-e-sawab.html">Salana
+                                            Majlas-e-Isal-e-sawab</a>
+                                    </li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="Salana_Majlas-e-shabina.html">Salana
+                                            Majlas-e-shabina</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="taswafseminar_events.html">taswaf seminar</a>
+                                    </li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="ursmubarak_events.html">ursmubarak</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies" href="visits_events.html">visits</a>
+                                    </li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="Weekly_Majlas-e-Zikr.html">Weekly
+                                            Majlas-e-Zikr</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link to_upper dropdown-toggle" id="lies" href="#"
+                                    id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    VIDEOS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown" id="drop-down">
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="ursmubarak_videos.html">ursmubarak vedios</a>
+                                    </li>
+                                    <li><a class="dropdown-item to_upper" id="lies" href="seminar_video.html">seminar
+                                            vedios</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link to_upper dropdown-toggle" id="lies" href="#"
+                                    id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    BOOKS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown" id="drop-down">
+                                    <li><a class="dropdown-item to_upper" id="lies" href="Books.html">
+                                            books</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="shamsulmashaikh_books.html">shamsulmashaikh
+                                            books</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="maqalatetasawuf_books.html">maqalatetasawuf
+                                            books</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link to_upper" id="lies"
+                                    href="shamsulmashaikh_books.html">shamsulmashaikh BOOK</a> </li>
+                            <li class="nav-item"> <a class="nav-link to_upper" id="lies" href="contact.html">CONTACT
+                                    US</a> </li>
+                            <li class="nav-item ">
+                                <a class="nav-link to_upper" id="lies" href="gallery.html" role="button">
+                                    GALLERY
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div style=" height: 200px;">
+
+        </div>
+    </header>
+
+    <!-- main content  -->
+    <div class="container">
+        <div class="row col-vedios">
+            <div class="col-12 col-md-6 col-lg-4 col-xs-12 col-sm-12 my-3">
+                <a href="https://drive.google.com/file/d/1EAYIex5uGJnFYcVDJ3NPqriatBwiHgKm/view?usp=sharing"
+                    data-lightbox-gallery="youtube-video" title="خورشید تاباں" target="_blank">
+                    <img alt="Image Error" src="New Images\01.png"
+                        class="img-responsive img-fluid img-fullwidth col urs_vedio gap-3">
+                </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xs-12 col-sm-12 my-3">
+                <a href="https://drive.google.com/file/d/1TqKDUpQEMsqeuzMcVSsB3gQeapHgu-Y-/view?usp=sharing"
+                    data-lightbox-gallery="youtube-video" title="سلسلہ عالیہ قادریہ نوشاحیہ" target="_blank">
+                    <img alt="Image Error" src="New Images\05.png"
+                        class="img-responsive img-fluid  img-fullwidth col urs_vedio gap-3">
+                </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4  col-sm-12 my-3">
+                <a href="https://drive.google.com/file/d/1jeZ53dbsaUwtKMM5WZpRp2YfMf3KI0T2/view?usp=sharing"
+                    data-lightbox-gallery="youtube-video" title="رکنیت فارم" target="_blank">
+                    <img alt="Image Error" src="New Images\09.png"
+                        class="img-responsive img-fluid  img-fullwidth col urs_vedio gap-3">
+                </a>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- </section> -->
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-1">
+        <div class="container">
+            <div class="text-center">
+                <a href="#">
+                    <img class="mb-4" src="images/logos/Footer Logo.png" alt="Footer Logo"></a>
+                <p>Alienum phaedrum torquatu pe us nihil expet in mei. Mei ula wit touch markersi m phaedrum tor lorim
+                    uilmes
+                    ilmes..</p>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 ps-3">
+                    <ul>
+                        <li> <a class=" to_upper active" href="index.html">HOME</a> </li>
+                        <li> <a class=" to_upper" href="intro.html">INTRODUCTION</a> </li>
+                        <li> <a class=" to_upper" href="massage.html">MESSAGE</a> </li>
+                        <li><a class="to_upper" href="educational_project.html">Educational Projects</a></li>
+                        <li><a class=" to_upper" href="idara_project.html">Idara Projects</a></li>
+                        <li><a class=" to_upper" href="welfare_project.html">Welfare Projects</a></li>
+                        <li><a class="to_upper" href="youth-wing.html">Youth wing Projects</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 ps-3">
+                    <ul>
+                        <li><a class="to_upper" id="lies"
+                                href="khanqah template\events\ruhaniijtima_events.html">ruhaniijtima</a>
+                        </li>
+                        <li><a class=" to_upper" href="khanqah template\events\Salana_Majlas-e-Isal-e-sawab.html">Salana
+                                Majlas-e-Isal-e-sawab</a>
+                        </li>
+                        <li><a class="to_upper" href="Salana_Majlas-e-shabina.html">Salana
+                                Majlas-e-shabina</a></li>
+                        <li><a class="to_upper" href="khanqah template\events\taswafseminar_events.html">taswaf
+                                seminar</a></li>
+                        <li><a class="to_upper" href="ursmubarak_events.html">ursmubarak</a></li>
+                        <li><a class="to_upper" href="visits_events.html">visits</a></li>
+                        <li><a class="to_upper" href="Weekly_Majlas-e-Zikr.html">Weekly
+                                Majlas-e-Zikr</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 ps-3">
+                    <ul>
+                        <li><a class="to_upper" href="ursmubarak_videos.html">ursmubarak vedios</a></li>
+                        <li><a class="to_upper" href="seminar_video.html">seminar vedios</a></li>
+                        <li><a class="to_upper" href="Books.html">
+                                books</a></li>
+                        <li><a class="to_upper" href="shamsulmashaikh_books.html">shamsulmashaikh
+                                books</a></li>
+                        <li><a class="to_upper" href="maqalatetasawuf_books.html">maqalatetasawuf
+                                books</a></li>
+                        <li> <a class="to_upper" href="contact.html">CONTACT US</a> </li>
+                        <li><a class="to_upper" href="gallery.html">GALLERY</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center">Copyright &copy;2021. Developed by EhsasLab</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

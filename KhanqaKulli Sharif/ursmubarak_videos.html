@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Ursmubarak_videos</title>
+    <link rel="stylesheet" href="khanqah_style.css">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .ursmubarak {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+
+        }
+
+        .urs-text {
+            border: 1px solid rgba(60, 64, 67, 0.15);
+            padding: 12px;
+            border-radius: 6px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+
+        .urs_vedio {
+            height: 350px;
+            width: 250px;
+            border-radius: 6px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+
+        .col-vedios {
+            margin-top: 25px;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+        <!-- class="position-absolute top-0 start-50 translate-middle-x" -->
+        <div id="logo" class="position-fixed top-0 text-center position-relative">
+            <a href="index.html"><img src="images/logos/khanqah Logo 1.png" alt="Khanqah Logo"></a>
+            <nav class="navbar navbar-collapse navbar-collapse-sm navbar-expand-md navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button id="line-button" class="navbar-toggler position-relative start-50 translate-middle-x"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fas fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-start" id="navbarTogglerDemo02">
+                        <ul
+                            class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center flex-md-wrap flex-lg-wrap w-100">
+                            <li class="nav-item"> <a class="nav-link to_upper active" id="lies"
+                                    href="index.html">HOME</a> </li>
+                            <li class="nav-item"> <a class="nav-link to_upper" id="lies"
+                                    href="intro.html">INTRODUCTION</a> </li>
+                            <li class="nav-item"> <a class="nav-link to_upper" id="lies" href="message.html">MESSAGE</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link to_upper dropdown-toggle" id="lies" href="#"
+                                    id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    PROJECTS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown" id="drop-down">
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="educational_project.html">Educational
+                                            Projects</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies" href="idara_project.html">Idara
+                                            Projects</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies" href="welfare_project.html">Welfare
+                                            Projects</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies" href="youth-wing.html">Youth wing
+                                            Projects</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link to_upper dropdown-toggle" id="lies" href="#"
+                                    id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    EVENTS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown" id="drop-down">
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="ruhaniijtima_events.html">ruhaniijtima</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="Salana_Majlas-e-Isal-e-sawab.html">Salana
+                                            Majlas-e-Isal-e-sawab</a>
+                                    </li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="Salana_Majlas-e-shabina.html">Salana
+                                            Majlas-e-shabina</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="taswafseminar_events.html">taswaf seminar</a>
+                                    </li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="ursmubarak_events.html">ursmubarak</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies" href="visits_events.html">visits</a>
+                                    </li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="Weekly_Majlas-e-Zikr.html">Weekly
+                                            Majlas-e-Zikr</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link to_upper dropdown-toggle" id="lies" href="#"
+                                    id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    VIDEOS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown" id="drop-down">
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="ursmubarak_videos.html">ursmubarak vedios</a>
+                                    </li>
+                                    <li><a class="dropdown-item to_upper" id="lies" href="seminar_video.html">seminar
+                                            vedios</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link to_upper dropdown-toggle" id="lies" href="#"
+                                    id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    BOOKS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown" id="drop-down">
+                                    <li><a class="dropdown-item to_upper" id="lies" href="Books.html">
+                                            books</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="shamsulmashaikh_books.html">shamsulmashaikh
+                                            books</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="maqalatetasawuf_books.html">maqalatetasawuf
+                                            books</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link to_upper" id="lies"
+                                    href="shamsulmashaikh_books.html">shamsulmashaikh BOOK</a> </li>
+                            <li class="nav-item"> <a class="nav-link to_upper" id="lies" href="contact.html">CONTACT
+                                    US</a> </li>
+                            <li class="nav-item ">
+                                <a class="nav-link to_upper" id="lies" href="gallery.html" role="button">
+                                    GALLERY
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div style=" height: 200px;">
+
+        </div>
+    </header>
+    <!-- main content -->
+    <section class="ursmubarak_videos">
+        <div class="container">
+            <div class="row col-vedios">
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=kWNjL6zAufc" data-lightbox-gallery="youtube-video"
+                        title="Telawat Qari Syed Sadaqat Ali sab (Part-1) and 23 Jan 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/kWNjL6zAufc/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=vDhJlVjB2qo" data-lightbox-gallery="youtube-video"
+                        title="Telawat Qari Syed Sadaqat Ali sab (Part-2) and 24 Jan 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/vDhJlVjB2qo/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=Jg_wwZ_aBck" data-lightbox-gallery="youtube-video"
+                        title="Shane Olia By Peer Syed Azhar Ul Hassan Ghailani sab and 3 May 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/Jg_wwZ_aBck/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=v4uJA8MSIkQ" data-lightbox-gallery="youtube-video"
+                        title="Salana khatam Pak peer syed Mazhar Ul Hassan sab and 23 Aug 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/v4uJA8MSIkQ/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=ISviAEAzwMM" data-lightbox-gallery="youtube-video"
+                        title="Naat Lajpal Nabi Mere by Sagheer Ahmad Naqshbandi and 25 April 2020." target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/ISviAEAzwMM/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=5y7B5yQBwpA" data-lightbox-gallery="youtube-video"
+                        title="27 Feb 2020 نعت شریف اور منقبت مولا علی رضی اللہ عنہا  / ماہانہ گیارہویں شریف خانقاہ عالیہ کلی شریف نارووال"
+                        target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/5y7B5yQBwpA/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=cbTvfHKDibM" data-lightbox-gallery="youtube-video" title="
+                معراج مصطفی صلی اللہ علیہ وسلم | بیان ڈاکٹر محمد ارشد2021 ماہانہ گیارہویں خانقاہ عالیہ کلی شریف نارووال                 
+                           " target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/cbTvfHKDibM/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=Ti6JP1agCyw" data-lightbox-gallery="youtube-video"
+                        title="نعت شریف۔ پشیمانم پشیمانم پشیماں یارسول اللہ" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/Ti6JP1agCyw/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=g-qxiRXMsOQ" data-lightbox-gallery="youtube-video"
+                        title="نعلین مصطفی صلی اللہ علیہ وسلم کی فضیلت اور پیغام تاجداران کلی شریف" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/g-qxiRXMsOQ/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=i6vYw6zlKU0" data-lightbox-gallery="youtube-video"
+                        title="نعت شریف: تو شاہ خوباں تو جان جانا ہے چہرہ ام الکتاب تیرا سالانہ عرس (خانقاہ عالیہ کلی شریف)"
+                        target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/i6vYw6zlKU0/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=koRdbPbXgC0" data-lightbox-gallery="youtube-video"
+                        title="نعت شریف: صلو علیہ وآلہ قاری زاہد محمود قادری سالانہ عرس مبارک خانقاہ عالیہ کلی شریف نارووال"
+                        target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/koRdbPbXgC0/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=KIrjEYIKm5Y" data-lightbox-gallery="youtube-video" title="
+                        Naat Firdoos Bari chez ha by H.Abdurazaq Poran and 6 Jan 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/KIrjEYIKm5Y/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=gS73Yn7Dy9U" data-lightbox-gallery="youtube-video"
+                        title="کلام میاں محمد بخش آواز حافظ عبد الرزاق زیر صدارت حضور قبلہ عالم پیر سید اظہر الحسن گیلانی شاہ صاحب"
+                        target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/v=gS73Yn7Dy9U/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=YAkvpoQ-mhE" data-lightbox-gallery="youtube-video"
+                        title="کلام میاں محمد بخش آواز حافظ عبد الرزاق زیر صدارت حضور قبلہ عالم پیر سید اظہر الحسن گیلانی شاہ صاحب"
+                        target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/YAkvpoQ-mhE/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=zM3J3CvdnRs" data-lightbox-gallery="youtube-video" title="
+                        Yar ki gali ka kutta | Khetaab Khawaja Ghulam Qutboo Din Faridi (Part-4) and 23 Apr 2020"
+                        target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/zM3J3CvdnRs/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=vewAuvfVELs" data-lightbox-gallery="youtube-video" title="
+                        Waseela Q Zaroori ha | Hazrat Khawaja ghulam kutaboo din faridi | Part-3 | 19 Apr 2020"
+                        target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/vewAuvfVELs/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=Bd7R9bzFbBo" data-lightbox-gallery="youtube-video"
+                        title="ہر ایک جو خدا کو مانتا ہے مومن نہیں \خواجہ غلام قطب الدین فریدی\ سالانہ عرس (خانقاہ عالیہ کلی شریف)"
+                        target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/Bd7R9bzFbBo/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=d8sXy5x15GI" data-lightbox-gallery="youtube-video"
+                        title="
+                        قبر پرست کون۔خواجہ غلام قطب الدین فریدی (پارٹ۔1) سالانہ عرس مبارک 2019 خانقاہ عالیہ کلی شریف نارووال" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/d8sXy5x15GI/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=LIs9bUFgKjk" data-lightbox-gallery="youtube-video"
+                        title="
+                        مولا علی کی نماز عصر کا واقعہ۔ مفتی محمد اقبال چشتی (پارٹ۔5)سالانہ عرس خانقاہ عالیہ کلی شریف نارووال" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/LIs9bUFgKjk/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=llk-Ilx_Mxs" data-lightbox-gallery="youtube-video"
+                        title="
+                        Waqia Ghazwa Khandaq Mufti Iqbal Chishti (Part-4)Salana Urs2019 KHanqahe Aalia Kulli Shareef Narowal and 18 Feb 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/llk-Ilx_Mxs/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=meL87zjJvDE" data-lightbox-gallery="youtube-video"
+                        title="Zikry Mola Ali(R.A) Mufti Iqbal Chishti(Part-3) and 15 Feb 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/meL87zjJvDE/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=575wiZ4TGSo" data-lightbox-gallery="youtube-video"
+                        title="Hazrat Ali (R.A) ki Shan Mufti Iqbal Chishti (Part-2) and 14 Feb 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/v=575wiZ4TGSo/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=cn9Nx0jLlek" data-lightbox-gallery="youtube-video"
+                        title="Shane Ali (R.A) Mufti Iqbal Chishti (Part-1) and 12 Feb 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/cn9Nx0jLlek/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=wZdhaxYMcc8" data-lightbox-gallery="youtube-video"
+                        title="خوف اور غم میں فرق۔ علامہ حامد سعید کاظمی سالانہ عرس 22اکتوبر 2019" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/wZdhaxYMcc8/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=0sqCOM02TPU" data-lightbox-gallery="youtube-video"
+                        title="قرآن سے ہدایت کن کو ملتی ہے۔حامد سعید کاظمی(پارٹ۔اا)" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/0sqCOM02TPU/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=X9UMYG29JgY" data-lightbox-gallery="youtube-video"
+                        title="ہدایت کیسے اور کسے ملتی ہے حامد سعید کاظمی(پارٹ۔ا) سالانہ عرس 22اکتوبر" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/X9UMYG29JgY/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=MWaL-v-Ff6A" data-lightbox-gallery="youtube-video"
+                        title="حضرت آدم علیہ السلام کے بعد جب لوگ مشرک ہوئے" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/v=MWaL-v-Ff6A/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=Nm-K2bYjVl8" data-lightbox-gallery="youtube-video"
+                        title="اولیا اکرام کی شان میں خوبصورت بیان سالانہ عرس خانقاہ عالیہ کلی شریف نارووال"
+                        target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/v=Nm-K2bYjVl8/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=MiGGZI21BOg" data-lightbox-gallery="youtube-video"
+                        title="pukaro shahe jilan ko pukaro (Part-1) and 20 Jan 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/MiGGZI21BOg/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=La3RgMdGdWw" data-lightbox-gallery="youtube-video"
+                        title="pukaro shahe jilan ko pukaro (Part-2) Urs 2019 and 21 Jan 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/La3RgMdGdWw/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=353U_KBsPbI" data-lightbox-gallery="youtube-video"
+                        title="Hashar mein jab un ko sajday se Uthaya jay ga (Part-3) and 19 Jan 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/353U_KBsPbI/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=1FrlLOs9pbE" data-lightbox-gallery="youtube-video"
+                        title="Sehra Mubarak (Part-1) 21 Oct 2019" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/1FrlLOs9pbE/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=PmNOExDT36w" data-lightbox-gallery="youtube-video"
+                        title="Sehra Mubarak (Part,2) Khanqahe Aalia kulli Shareef Narowal." target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/PmNOExDT36w/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=F5HRYkLZEBo" data-lightbox-gallery="youtube-video" title="قوالی سالانہ عرس 2019(پارٹ-1) خانقاہ عالیہ کلی شریف نارووال۔صدارت:صاحبزادہ پیر سیداظہر الحسن گیلانی
+                        " target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/F5HRYkLZEBo/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=xT38IZCSN_w" data-lightbox-gallery="youtube-video"
+                        title="Kalam Mian Muhammad Bakhsh, By Qibla Qari khursheed Ahmad and 8 Jan 2020"
+                        target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/xT38IZCSN_w/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=WfGqH4DaflU" data-lightbox-gallery="youtube-video"
+                        title="کلام بابا غلام فرید خوبصورت آواز قاری سید صداقت علی سالانہ عرس مبارک حضرت بابا شہسوار شمس "
+                        target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/WfGqH4DaflU/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=sqRlXY3RrDg" data-lightbox-gallery="youtube-video"
+                        title="Qawali Second Day 1 and 11 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/sqRlXY3RrDg/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=dPGk_DwROF8" data-lightbox-gallery="youtube-video"
+                        title="Qawali Second Day 2 and 11 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/dPGk_DwROF8/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=XokI2TPMbMA" data-lightbox-gallery="youtube-video"
+                        title="Qawali Second Day 3 and 11 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/XokI2TPMbMA/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=Ifg-AHBMZ4Y" data-lightbox-gallery="youtube-video"
+                        title="Qawali Second Day 4 and 11 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/Ifg-AHBMZ4Y/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=vJzGw24Xme0" data-lightbox-gallery="youtube-video"
+                        title="Qawali Second Day 5 and 11 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/vJzGw24Xme0/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=tKIf6PhPGcY" data-lightbox-gallery="youtube-video"
+                        title="Qawali Second Day 6 and 11 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/tKIf6PhPGcY/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=77x_96TzsLU" data-lightbox-gallery="youtube-video"
+                        title="Qawali Second Day 7 and 11 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/77x_96TzsLU/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=kvgTEHLfM70" data-lightbox-gallery="youtube-video"
+                        title="Qawali 1 and 9 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/kvgTEHLfM70/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=mG6ntu1F6eo" data-lightbox-gallery="youtube-video"
+                        title="Qawali 2 and 9 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/mG6ntu1F6eo/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=tGVeBSDgaok" data-lightbox-gallery="youtube-video"
+                        title="Qawali 3 and 11 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/tGVeBSDgaok/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=DZFXDhWm6Pg" data-lightbox-gallery="youtube-video"
+                        title="Qawali 4 and 11 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/DZFXDhWm6Pg/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=mfI2IXF1Jk0" data-lightbox-gallery="youtube-video"
+                        title="Qawali 5 and 11 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/mfI2IXF1Jk0/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=FPIXdj798rY" data-lightbox-gallery="youtube-video"
+                        title="Mehfil 1 and 16 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/FPIXdj798rY/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=CZXcW_uYWHY" data-lightbox-gallery="youtube-video"
+                        title="Mehfil 2 and 18 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/CZXcW_uYWHY/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=TtFamjqEqYc" data-lightbox-gallery="youtube-video"
+                        title="Mehfil 3 and 18 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/TtFamjqEqYc/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=gxp3wgd7zWU" data-lightbox-gallery="youtube-video"
+                        title="Mehfil 4 and 18 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/gxp3wgd7zWU/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=Ll_wQ_lPOR8" data-lightbox-gallery="youtube-video"
+                        title="Mehfil 5 and 18 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/Ll_wQ_lPOR8/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=NP7l7YiYnmI" data-lightbox-gallery="youtube-video"
+                        title="Mehfil 6 and 19 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/NP7l7YiYnmI/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=2p5jNvUDH4Y" data-lightbox-gallery="youtube-video"
+                        title="Mehfil 7 and 19 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/2p5jNvUDH4Y/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=0AiM3Z2cd9U" data-lightbox-gallery="youtube-video"
+                        title="Mehfil 8 and 19 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/0AiM3Z2cd9U/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=i7MMewXGH1Y" data-lightbox-gallery="youtube-video"
+                        title="Mehfil 9 and 22 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/i7MMewXGH1Y/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=EB4NbpL6X4M" data-lightbox-gallery="youtube-video"
+                        title="Mehfil 10 and 22 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/EB4NbpL6X4M/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=w5tsTkgq6bw" data-lightbox-gallery="youtube-video"
+                        title="Mehfil 11 and 22 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/w5tsTkgq6bw/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=kgkSbsX1VnQ" data-lightbox-gallery="youtube-video"
+                        title="Mehfil 12 and 22 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/kgkSbsX1VnQ/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=KSnbbZYPR5M" data-lightbox-gallery="youtube-video"
+                        title="Mehfil 13 and 22 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/KSnbbZYPR5M/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+                <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                    <a href="https://www.youtube.com/watch?v=IacPqL9Mdsg" data-lightbox-gallery="youtube-video"
+                        title="Mehfil 14 and 23 Dec 2020" target="_blank">
+                        <img alt="" src="https://img.youtube.com/vi/IacPqL9Mdsg/sddefault.jpg"
+                            class="img-responsive img-fullwidth col urs_vedio gap-3">
+                    </a>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-1">
+        <div class="container">
+            <div class="text-center">
+                <a href="#">
+                    <img class="mb-4" src="images/logos/Footer Logo.png" alt="Footer Logo"></a>
+                <p>Alienum phaedrum torquatu pe us nihil expet in mei. Mei ula wit touch markersi m phaedrum tor lorim
+                    uilmes
+                    ilmes..</p>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 ps-3">
+                    <ul>
+                        <li> <a class=" to_upper active" href="index.html">HOME</a> </li>
+                        <li> <a class=" to_upper" href="intro.html">INTRODUCTION</a> </li>
+                        <li> <a class=" to_upper" href="massage.html">MESSAGE</a> </li>
+                        <li><a class="to_upper" href="educational_project.html">Educational Projects</a></li>
+                        <li><a class=" to_upper" href="idara_project.html">Idara Projects</a></li>
+                        <li><a class=" to_upper" href="welfare_project.html">Welfare Projects</a></li>
+                        <li><a class="to_upper" href="youth-wing.html">Youth wing Projects</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 ps-3">
+                    <ul>
+                        <li><a class="to_upper" id="lies"
+                                href="khanqah template\events\ruhaniijtima_events.html">ruhaniijtima</a>
+                        </li>
+                        <li><a class=" to_upper" href="khanqah template\events\Salana_Majlas-e-Isal-e-sawab.html">Salana
+                                Majlas-e-Isal-e-sawab</a>
+                        </li>
+                        <li><a class="to_upper" href="Salana_Majlas-e-shabina.html">Salana
+                                Majlas-e-shabina</a></li>
+                        <li><a class="to_upper" href="khanqah template\events\taswafseminar_events.html">taswaf
+                                seminar</a></li>
+                        <li><a class="to_upper" href="ursmubarak_events.html">ursmubarak</a></li>
+                        <li><a class="to_upper" href="visits_events.html">visits</a></li>
+                        <li><a class="to_upper" href="Weekly_Majlas-e-Zikr.html">Weekly
+                                Majlas-e-Zikr</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 ps-3">
+                    <ul>
+                        <li><a class="to_upper" href="ursmubarak_videos.html">ursmubarak vedios</a></li>
+                        <li><a class="to_upper" href="seminar_video.html">seminar vedios</a></li>
+                        <li><a class="to_upper" href="Books.html">
+                                books</a></li>
+                        <li><a class="to_upper" href="shamsulmashaikh_books.html">shamsulmashaikh
+                                books</a></li>
+                        <li><a class="to_upper" href="maqalatetasawuf_books.html">maqalatetasawuf
+                                books</a></li>
+                        <li> <a class="to_upper" href="contact.html">CONTACT US</a> </li>
+                        <li><a class="to_upper" href="gallery.html">GALLERY</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center">Copyright &copy;2021. Developed by EhsasLab</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

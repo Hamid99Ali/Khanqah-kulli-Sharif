@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="khanqah_style.css">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .seminar_vedio {
+            height: 350px;
+            width: 250px;
+            border-radius: 6px;
+            /* border:2px solid red ; */
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+
+        .col-vedios {
+            margin-top: 50px;
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+
+        .ursmubarak {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+
+        }
+
+        .urs-text {
+            border: 1px solid rgba(60, 64, 67, 0.15);
+            padding: 12px;
+            border-radius: 6px;
+            width: 76%;
+            text-align: center;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- class="position-absolute top-0 start-50 translate-middle-x" -->
+        <div id="logo" class="position-fixed top-0 text-center position-relative">
+            <a href="index.html"><img src="images/logos/khanqah Logo 1.png" alt="Khanqah Logo"></a>
+            <nav class="navbar navbar-collapse navbar-collapse-sm navbar-expand-md navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button id="line-button" class="navbar-toggler position-relative start-50 translate-middle-x"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fas fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-start" id="navbarTogglerDemo02">
+                        <ul
+                            class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center flex-md-wrap flex-lg-wrap w-100">
+                            <li class="nav-item"> <a class="nav-link to_upper active" id="lies"
+                                    href="index.html">HOME</a> </li>
+                            <li class="nav-item"> <a class="nav-link to_upper" id="lies"
+                                    href="intro.html">INTRODUCTION</a> </li>
+                            <li class="nav-item"> <a class="nav-link to_upper" id="lies" href="message.html">MESSAGE</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link to_upper dropdown-toggle" id="lies" href="#"
+                                    id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    PROJECTS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown" id="drop-down">
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="educational_project.html">Educational
+                                            Projects</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies" href="idara_project.html">Idara
+                                            Projects</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies" href="welfare_project.html">Welfare
+                                            Projects</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies" href="youth-wing.html">Youth wing
+                                            Projects</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link to_upper dropdown-toggle" id="lies" href="#"
+                                    id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    EVENTS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown" id="drop-down">
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="ruhaniijtima_events.html">ruhaniijtima</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="Salana_Majlas-e-Isal-e-sawab.html">Salana
+                                            Majlas-e-Isal-e-sawab</a>
+                                    </li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="Salana_Majlas-e-shabina.html">Salana
+                                            Majlas-e-shabina</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="taswafseminar_events.html">taswaf seminar</a>
+                                    </li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="ursmubarak_events.html">ursmubarak</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies" href="visits_events.html">visits</a>
+                                    </li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="Weekly_Majlas-e-Zikr.html">Weekly
+                                            Majlas-e-Zikr</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link to_upper dropdown-toggle" id="lies" href="#"
+                                    id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    VIDEOS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown" id="drop-down">
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="ursmubarak_videos.html">ursmubarak vedios</a>
+                                    </li>
+                                    <li><a class="dropdown-item to_upper" id="lies" href="seminar_video.html">seminar
+                                            vedios</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link to_upper dropdown-toggle" id="lies" href="#"
+                                    id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    BOOKS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown" id="drop-down">
+                                    <li><a class="dropdown-item to_upper" id="lies" href="Books.html">
+                                            books</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="shamsulmashaikh_books.html">shamsulmashaikh
+                                            books</a></li>
+                                    <li><a class="dropdown-item to_upper" id="lies"
+                                            href="maqalatetasawuf_books.html">maqalatetasawuf
+                                            books</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link to_upper" id="lies"
+                                    href="shamsulmashaikh_books.html">shamsulmashaikh BOOK</a> </li>
+                            <li class="nav-item"> <a class="nav-link to_upper" id="lies" href="contact.html">CONTACT
+                                    US</a> </li>
+                            <li class="nav-item ">
+                                <a class="nav-link to_upper" id="lies" href="gallery.html" role="button">
+                                    GALLERY
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div style=" height: 200px;">
+
+        </div>
+    </header>
+    <!-- main content -->
+    <div class="container">
+        <div class="row col-vedios ">
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=k_5s4nqb4n0" data-lightbox-gallery="youtube-video"
+                    title="Seminar 2 and 9 Dec 2020" target="_blank">
+                    <img alt="seminar 2 vedio error" src="https://img.youtube.com/vi/k_5s4nqb4n0/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=EA6hUiq6a90" data-lightbox-gallery="youtube-video"
+                    title="Seminar 5 and 9 Dec 2020" target="_blank">
+                    <img alt="seminar 5 vedio error" src="https://img.youtube.com/vi/EA6hUiq6a90/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio  gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=rae9ryVWlUk" data-lightbox-gallery="youtube-video"
+                    title="Seminar 6 and 9 Dec 2020" target="_blank">
+                    <img alt="seminar 6 vedio or image error" src="https://img.youtube.com/vi/rae9ryVWlUk/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=rTmyXrbdUTI" data-lightbox-gallery="youtube-video"
+                    title="Seminar 7 and 9 Dec 2020" target="_blank">
+                    <img alt="seminar 7 vedio or image error" src="https://img.youtube.com/vi/rTmyXrbdUTI/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=y1lqa4-etDA" data-lightbox-gallery="youtube-video"
+                    title="Seminar 8 and 9 Dec 2020" target="_blank">
+                    <img alt="seminar 8 vedio or image error" src="https://img.youtube.com/vi/y1lqa4-etDA/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=OcVy5jtAfBU" data-lightbox-gallery="youtube-video"
+                    title="Seminar 9 and 9 Dec 2020" target="_blank">
+                    <img alt="Seminar 9 image or vedio Error" src="https://img.youtube.com/vi/OcVy5jtAfBU/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=clWz7HROrcs" data-lightbox-gallery="youtube-video"
+                    title="Seminar 10 and 9 Dec 2020" target="_blank">
+                    <img alt="Seminar 10 image or vedio Error"
+                        src="https://img.youtube.com/vi/clWz7HROrcs/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=-sHd5VYx4bc" data-lightbox-gallery="youtube-video"
+                    title="Seminar 11 and 9 Dec 2020" target="_blank">
+                    <img alt="Seminar 11 image or vedio Error"
+                        src="https://img.youtube.com/vi/-sHd5VYx4bc/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=O1mkwhx7iUk" data-lightbox-gallery="youtube-video"
+                    title="Seminar 12 and 9 Dec 2020" target="_blank">
+                    <img alt="Seminar 12 image or vedio Error"
+                        src="https://img.youtube.com/vi/O1mkwhx7iUk/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=3te5NzlKVgo" data-lightbox-gallery="youtube-video"
+                    title="Seminar 13 and 9 Dec 2020" target="_blank">
+                    <img alt="Seminar 13 image or vedio Error"
+                        src="https://img.youtube.com/vi/3te5NzlKVgo/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=vniA0UYqIDY" data-lightbox-gallery="youtube-video"
+                    title="Seminar 14 and 9 Dec 2020" target="_blank">
+                    <img alt="Seminar 14 image or vedio Error"
+                        src="https://img.youtube.com/vi/vniA0UYqIDY/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=zFve7vAd-nY" data-lightbox-gallery="youtube-video"
+                    title="Seminar 15 and 9 Dec 2020" target="_blank">
+                    <img alt="Seminar 15 image or vedio Error"
+                        src="https://img.youtube.com/vi/zFve7vAd-nY/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=479rolu7bQk" data-lightbox-gallery="youtube-video"
+                    title="Seminar 16 and 9 Dec 2020" target="_blank">
+                    <img alt="Seminar 16 image or vedio Error"
+                        src="https://img.youtube.com/vi/479rolu7bQk/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=IhP3c2Admqk" data-lightbox-gallery="youtube-video"
+                    title="Seminar 17 and 9 Dec 2020" target="_blank">
+                    <img alt="Seminar 17 image or vedio Error"
+                        src="https://img.youtube.com/vi/IhP3c2Admqk/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=xphzbLqMJkc" data-lightbox-gallery="youtube-video"
+                    title="Seminar 18 and 9 Dec 2020" target="_blank">
+                    <img alt="Seminar 18 image or vedio Error"
+                        src="https://img.youtube.com/vi/xphzbLqMJkc/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=3VfsPImlMhE" data-lightbox-gallery="youtube-video"
+                    title="Tasawuf Seminar 2019(Part-1)Khanqahe Alia Kulli Sharif Narowal Sdart:Peer Syed Azhar Ul Hassan Shah and 7 Jan 2020"
+                    target="_blank">
+                    <img alt="" src="https://img.youtube.com/vi/3VfsPImlMhE/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=ui__0f98ymo" data-lightbox-gallery="youtube-video"
+                    title="Tasawuf Seminar 2019(Part-2)Khanqahe Alia Kulli Sharif Narowal Sdart:Peer Syed Azhar-Ul-Hassan Shah and 8 Jan 2020"
+                    target="_blank">
+                    <img alt="Tasawuf Seminar 2019(Part-2)Khanqahe Alia Kulli Sharif Narowal Sdart:Peer Syed Azhar-Ul-Hassan Shah image or vedio Error"
+                        src="https://img.youtube.com/vi/ui__0f98ymo/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=-Bz4O6vNzJQ" data-lightbox-gallery="youtube-video"
+                    title="Tasawuf Seminar 2019(Part-3)Khanqahe Alia Kulli Sharif Narowal Sdart:Peer Syed Azhar-Ul-Hassan Shah and 9 Jan 2020"
+                    target="_blank">
+                    <img alt="" src="https://img.youtube.com/vi/-Bz4O6vNzJQ/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=KFMam2NR05w" data-lightbox-gallery="youtube-video"
+                    title="Tasawuf Seminar (Part-4) Khanqah e Aalia Kulli Sharif Narowal Sadarat Peer Syed Azhar ul Hassan Shah and 10 Jan 2020"
+                    target="_blank">
+                    <img alt="" src="https://img.youtube.com/vi/KFMam2NR05w/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=NGz-xGe6bNQ" data-lightbox-gallery="youtube-video" title="
+                    Tasawaf Seminar Part.1 2020 | Tilawat | Kulli Shareef Narowal and 9 Dec 2020" target="_blank">
+                    <img alt="" src="https://img.youtube.com/vi/NGz-xGe6bNQ/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=aArlinW3ex4" data-lightbox-gallery="youtube-video"
+                    title="Tasawaf Seminar 2020 | Naat | Urse kulli Shareef narowal and 9 Dec 2020 " target="_blank">
+                    <img alt="" src="https://img.youtube.com/vi/aArlinW3ex4/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+            <div class="col col-md-6 col-lg-4 col-sm-12 my-3">
+                <a href="https://www.youtube.com/watch?v=9Xle3h-HnzE" data-lightbox-gallery="youtube-video"
+                    title="Tasawaf Seminar P-3 | Allama Masood | Khanqahe Aalia kulli Shareef narowal and 9 Dec 2020"
+                    target="_blank">
+                    <img alt="" src="https://img.youtube.com/vi/9Xle3h-HnzE/sddefault.jpg"
+                        class="img-responsive img-fullwidth col seminar_vedio gap-3">
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="pt-5 pb-1">
+        <div class="container">
+            <div class="text-center">
+                <a href="#">
+                    <img class="mb-4" src="images/logos/Footer Logo.png" alt="Footer Logo"></a>
+                <p>Alienum phaedrum torquatu pe us nihil expet in mei. Mei ula wit touch markersi m phaedrum tor lorim
+                    uilmes
+                    ilmes..</p>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 ps-3">
+                    <ul>
+                        <li> <a class=" to_upper active" href="index.html">HOME</a> </li>
+                        <li> <a class=" to_upper" href="intro.html">INTRODUCTION</a> </li>
+                        <li> <a class=" to_upper" href="massage.html">MESSAGE</a> </li>
+                        <li><a class="to_upper" href="educational_project.html">Educational Projects</a></li>
+                        <li><a class=" to_upper" href="idara_project.html">Idara Projects</a></li>
+                        <li><a class=" to_upper" href="welfare_project.html">Welfare Projects</a></li>
+                        <li><a class="to_upper" href="youth-wing.html">Youth wing Projects</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 ps-3">
+                    <ul>
+                        <li><a class="to_upper" id="lies"
+                                href="khanqah template\events\ruhaniijtima_events.html">ruhaniijtima</a>
+                        </li>
+                        <li><a class=" to_upper" href="khanqah template\events\Salana_Majlas-e-Isal-e-sawab.html">Salana
+                                Majlas-e-Isal-e-sawab</a>
+                        </li>
+                        <li><a class="to_upper" href="Salana_Majlas-e-shabina.html">Salana
+                                Majlas-e-shabina</a></li>
+                        <li><a class="to_upper" href="khanqah template\events\taswafseminar_events.html">taswaf
+                                seminar</a></li>
+                        <li><a class="to_upper" href="ursmubarak_events.html">ursmubarak</a></li>
+                        <li><a class="to_upper" href="visits_events.html">visits</a></li>
+                        <li><a class="to_upper" href="Weekly_Majlas-e-Zikr.html">Weekly
+                                Majlas-e-Zikr</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 ps-3">
+                    <ul>
+                        <li><a class="to_upper" href="ursmubarak_videos.html">ursmubarak vedios</a></li>
+                        <li><a class="to_upper" href="seminar_video.html">seminar vedios</a></li>
+                        <li><a class="to_upper" href="Books.html">
+                                books</a></li>
+                        <li><a class="to_upper" href="shamsulmashaikh_books.html">shamsulmashaikh
+                                books</a></li>
+                        <li><a class="to_upper" href="maqalatetasawuf_books.html">maqalatetasawuf
+                                books</a></li>
+                        <li> <a class="to_upper" href="contact.html">CONTACT US</a> </li>
+                        <li><a class="to_upper" href="gallery.html">GALLERY</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center">Copyright &copy;2021. Developed by EhsasLab</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
